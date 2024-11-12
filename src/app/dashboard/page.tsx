@@ -2,6 +2,8 @@
 
 import React, { useState } from 'react';
 import Navbar from '../../components/Navbar';
+import Drawal from '../../components/drawer';
+import Content from '../../components/content';
 
 
 
@@ -18,10 +20,10 @@ const Dashboard: React.FC = () => {
     <Navbar />
   </div>
   <div className="drawer">
-  
+   <Drawal />
   </div>
   <div className="content">
-   
+  <Content />
   </div>
 </div>
   );

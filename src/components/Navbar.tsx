@@ -91,7 +91,7 @@ const Navbar = () => {
             }
           </div>
 
-          <FaChevronDown onClick={toggleMenu} className={styles.dropdownIcon} />
+          <FaChevronDown onClick={toggleMenu} className={styles.dropdownIcon2} />
 
 
           <div className={styles.userInfo}>

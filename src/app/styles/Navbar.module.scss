@@ -137,21 +137,23 @@
         background-color: #000c4559;
         font-size: 17px;
         padding-top: 10px;
-        padding: 10px 5px 5px 5px;
+        padding: 5px 5px 5px 5px;
         list-style: none;
         border-radius: 10px;
-        ul li{
+        ul li{ 
+          margin-top: 5px;
           a{
             text-decoration: none;
-            margin-top: 20px;
+            font-size: 15px;
           }
         }
       }
     }
-    .dropdownIcon{
+    .dropdownIcon2{
       font-size: 14px;
       color: #213F7D;
       margin-left: 10px;
+      display: none;
     }
 
     .notification {
@@ -230,6 +232,12 @@
         font-size: 20px;
         color: #213F7D;
         display: block;
+      }
+      .dropdownIcon2{
+        font-size: 14px;
+        color: #213F7D;
+        margin-left: 10px;
+        display: flex;
       }
     }
   }
