@@ -1,0 +1,61 @@
+// Variables
+$navbar-height: 60px;
+$drawer-width: 250px;
+$content-padding: 20px;
+
+// Responsive breakpoints
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+// Base styles
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.dashboard {
+  display: grid;
+  grid-template-areas:
+    "navbar navbar"
+    "drawer content";
+  grid-template-columns: $drawer-width 1fr;
+  grid-template-rows: $navbar-height 1fr;
+  height: 100vh;
+
+  // Navbar
+  .navbar {
+    grid-area: navbar;
+    background-color: #2c3e50;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 0 $content-padding;
+  }
+
+  // Left drawer
+  .drawer {
+    grid-area: drawer;
+    background-color: #f1f1f1;
+    padding: $content-padding;
+  }
+
+  // Main content
+  .content {
+    grid-area: content;
+    padding: $content-padding;
+  }
+}
+
+// Responsive styles
+@media (max-width: $breakpoint-md) {
+  .dashboard {
+    grid-template-areas:
+      "navbar"
+      "drawer"
+      "content";
+    grid-template-columns: 1fr;
+    grid-template-rows: $navbar-height $drawer-width 1fr;
+  }
+}
